@@ -1,0 +1,11 @@
+@EndUserText.label: 'Authorization for Payment Report'
+@MappingRole: true
+define role ZR_SFI003 {
+    grant 
+        select
+            on
+                ZR_SFI003
+                    where
+                        (CompanyCode) = aspect pfcg_auth(F_BKPF_BUK, BUKRS, ACTVT='03');
+                        
+}

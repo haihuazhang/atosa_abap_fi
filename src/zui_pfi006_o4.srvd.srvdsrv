@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition of Incoming Payment Printout(LOB01-012)'
+define service ZUI_PFI006_O4 {
+  expose ZR_SFI004        as I_JournalEntry;
+  expose ZC_ZT_PRT_RECORD as PrintRecord;
+  expose ZC_ZT_PRT_QUEUES;
+}

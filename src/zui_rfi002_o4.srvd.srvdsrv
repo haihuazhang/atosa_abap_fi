@@ -1,0 +1,12 @@
+@EndUserText.label: 'Service Definition of Check Printing Report'
+define service ZUI_RFI002_O4 {
+  expose ZC_RFI001;
+  expose ZC_ZT_PRT_RECORD as PrintRecord;
+  expose ZC_TFI001;
+  expose I_Housebank;
+  expose I_CompanyCode;
+  expose I_Supplier;
+  expose I_PaymentMethod;
+  expose ZR_SFI002;
+  expose ZC_ZT_PRT_QUEUES;
+}

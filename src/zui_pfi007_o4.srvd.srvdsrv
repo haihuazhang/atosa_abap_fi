@@ -1,0 +1,8 @@
+@EndUserText.label: 'Bank Reconciliation Statement - Print'
+define service ZUI_PFI007_O4 {
+  expose ZR_SFI012;
+  expose ZR_SFI013;
+  expose ZR_SFI014;
+  expose ZR_SFI015;
+  expose ZR_SFI016;
+}

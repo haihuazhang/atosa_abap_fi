@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition of AP Paymrnt Report'
+define service ZUI_SFI006_O4 {
+  expose ZR_SFI006;
+  expose I_BusinessUserVH;
+}

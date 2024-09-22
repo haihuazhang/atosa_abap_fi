@@ -1,0 +1,5 @@
+@EndUserText.label: 'ZZFISCM002'
+@OData.schema.name: 'YY1_BANKSTATEMENT_CDS'
+define service ZZFISCM002 {
+ expose ZZYY1_BANKSTATEMENT; 
+ } 

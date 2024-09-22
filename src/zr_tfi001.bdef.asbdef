@@ -1,0 +1,67 @@
+managed implementation in class ZBP_R_TFI001 unique;
+strict ( 2 );
+//with draft;
+
+define behavior for ZR_TFI001
+persistent table ztfi001
+//draft table ZTFI001_D
+etag master LocalLastChangedAt
+lock master
+
+//total etag LastChangedAt
+authorization master ( global )
+
+{
+  field ( mandatory : create )
+  Paymentcompanycode,
+  Housebank,
+  Housebankaccount,
+  Paymentmethod,
+  Outgoingcheque;
+
+  field ( readonly )
+  CreatedAt,
+  CreatedBy,
+  LastChangedAt,
+  LastChangedBy,
+  LocalLastChangedAt;
+
+  field ( readonly : update )
+  Paymentcompanycode,
+  Housebank,
+  Housebankaccount,
+  Paymentmethod,
+  Outgoingcheque;
+
+
+  create;
+  update;
+  delete;
+
+//  action setDataConfirmed;
+//  action setDataPrinted;
+  static action setDataConfirmed parameter ZR_PFI010;
+
+  static factory action createOrUpdateRecord parameter ZR_PFI010 [1];
+
+  //  draft action Edit;
+  //  draft action Activate optimized;
+  //  draft action Discard;
+  //  draft action Resume;
+  //  draft determine action Prepare;
+
+  mapping for ztfi001
+    {
+      Paymentcompanycode = paymentcompanycode;
+      Housebank          = housebank;
+      Housebankaccount   = housebankaccount;
+      Paymentmethod      = paymentmethod;
+      Outgoingcheque     = outgoingcheque;
+      Status             = status;
+      CreatedBy          = created_by;
+      CreatedAt          = created_at;
+      LastChangedBy      = last_changed_by;
+      LastChangedAt      = last_changed_at;
+      LocalLastChangedAt = local_last_changed_at;
+    }
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition of Invoice Print (LOB01-002)'
+define service ZUI_RFI001_O4 {
+  expose I_BillingDocument;
+  expose ZC_ZT_PRT_RECORD  as PrintRecord;
+}

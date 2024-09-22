@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition of AR Paymrnt Report'
+define service ZUI_SFI001_O4 {
+  expose ZR_SFI001;
+  expose I_BusinessUserVH;
+}

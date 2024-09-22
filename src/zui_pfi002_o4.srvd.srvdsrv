@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition of Check Printing(LOB01-001)'
+define service ZUI_PFI002_O4 {
+  expose ZR_PFI006;
+  expose ZR_PFI008;
+  expose ZR_PFI009;
+}

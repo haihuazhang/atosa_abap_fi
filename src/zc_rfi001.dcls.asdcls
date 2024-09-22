@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control of Check Printing'
+@MappingRole: true
+define role ZC_RFI001 {
+    grant
+        select
+            on
+                ZC_RFI001
+                    where
+                        inheriting conditions from entity ZR_RFI001;
+                        
+}

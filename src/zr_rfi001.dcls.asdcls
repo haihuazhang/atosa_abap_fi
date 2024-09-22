@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control of Check Printing'
+@MappingRole: true
+define role ZR_RFI001 {
+    grant
+        select
+            on
+                ZR_RFI001
+                    where
+                        (PaymentCompanyCode) = aspect pfcg_auth(F_BKPF_BUK, BUKRS, ACTVT='03');
+                        
+}

@@ -1,0 +1,7 @@
+@EndUserText.label: 'Service Definition of Invoice Print(Print)(LOB01-002)'
+define service ZUI_PFI004_O4 {
+  expose ZR_PFI001;
+  expose ZR_PFI003;
+  expose ZR_PFI004;
+  expose ZR_PFI005;
+}

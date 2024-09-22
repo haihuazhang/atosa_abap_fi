@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control of Incoming Payment'
+@MappingRole: true
+define role ZR_PFI011 {
+    grant 
+        select
+            on
+                ZR_PFI011
+                    where
+                        (CompanyCode) = aspect pfcg_auth(F_BKPF_BUK, BUKRS, ACTVT='03');
+                        
+}

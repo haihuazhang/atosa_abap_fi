@@ -1,0 +1,11 @@
+@EndUserText.label: 'Authorization for Payment Report'
+@MappingRole: true
+define role ZC_SFI003 {
+    grant 
+        select
+            on
+                ZC_SFI003
+                    where
+                        inheriting conditions from entity ZR_SFI003;
+                        
+}

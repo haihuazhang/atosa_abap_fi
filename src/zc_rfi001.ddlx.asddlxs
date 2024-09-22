@@ -1,0 +1,40 @@
+@Metadata.layer: #CUSTOMER
+
+annotate view ZC_RFI001 with
+{
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10 }]
+  OutgoingCheque;
+  @UI.lineItem: [{ position: 20 }]
+  PaymentMethod;
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 30 }]
+  HouseBankAccount;
+  @UI.selectionField: [{ position: 30 }]
+  @UI.lineItem: [{ position: 40 }]
+  HouseBank;
+  @UI.selectionField: [{ position: 40 }]
+  @UI.lineItem: [{ position: 50 }]
+  PaymentCompanyCode;
+  @UI.selectionField: [{ position: 50 }]
+  @UI.lineItem: [{ position: 60 }]
+  Status;
+  @UI.selectionField: [{ position: 60 }]
+  @UI.lineItem: [{ position: 70 }]
+  PaymentDocument;
+  @UI.selectionField: [{ position: 70 }]
+  @UI.lineItem: [{ position: 80, label: 'Payee' }]
+  @EndUserText.label: 'Payee'
+  Supplier;
+  @UI.selectionField: [{ position: 80 }]
+  @UI.lineItem: [{ position: 90 }]
+  ChequePaymentDate;
+  @UI.selectionField: [{ position: 90 }]
+  @UI.lineItem: [{ position: 100 }]
+  ChequeStatus;
+  @UI.lineItem: [{ position: 110 }]
+  PaidAmountInPaytCurrency;
+  //  @UI.lineItem: [{ position: 110 }]
+  //  ;
+
+}
